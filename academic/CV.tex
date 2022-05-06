@@ -1,0 +1,123 @@
+\documentclass{res} 			% LaTeX resume using res.cls
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage[none]{hyphenat}		% no hyphenation patterns exist
+\setlength{\topmargin}{-0.6in}  % Start text higher on the page 
+\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{12pt}   % make room for header
+\usepackage{fancyhdr}  			% use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\lhead{\hspace*{-\sectionwidth}FirstName LastName} % force lhead all the way left
+\rhead{Page \thepage}  			% put page number at right
+\cfoot{}  						% the footer is empty
+\pagestyle{fancy} 				% set pagestyle for the document
+\setmainfont{Palatino Linotype} % set custom font
+
+\begin{document} 
+\thispagestyle{empty} % this page does not have a header
+\name{FirstName LastName\ {\fontspec{KaiTi} (姓名)}}
+\address{ \vspace{0.2in} \\
+  Room 123, XXX Building, \\
+  No. 88 XXX Street,\\
+  Hong Kong, China} 
+\address{ \vspace{0.2in} \\
+  Tel: +852 1234 5678 \\
+  Email: name@domain.com \\
+  http://domain.com \\}
+
+\begin{resume} 
+\vspace{0.1in}
+
+\section{RESEARCH INTERESTS}
+\vspace{0.1in}
+	XXXX, XXXX
+
+
+\section{EDUCATION}
+\vspace{0.1in} 
+    {\bf ABC University}, Hong Kong \\
+    {\sl Ph.D. in XXX, Aug. 2020} \\
+    Advisor: Prof. XXXX
+    
+    {\bf DEF University}, Hong Kong \\
+    {\sl M.Sc. in XXX, 2016} 
+
+    {\bf GHI University}, China \\
+    {\sl B.A. in XXX, 2015}
+
+
+\section{PROFESSIONAL EXPERIENCE} 
+\vspace{0.1in} 
+    {\bf Teaching Assistant}, 
+    Department of XXX,
+    ABC University, Hong Kong,
+    Aug. 2016 - Present \\
+    CourseCode: Course Name, 2017/18 \\
+    CourseCode: Course Name, 2016/17 \\
+    CourseCode: Course Name, 2016/17
+    
+    {\bf Research Assistant},
+    Department of XXX,
+    DEF University, Hong Kong,
+    Nov. 2015 - Jun. 2016 \\
+    Supervisor: Prof. XXX
+    
+    {\bf Summer Internship}, 
+    JKL Company, Beijing, 
+    Jul. 2014 - Aug. 2014 \\
+    Tutor: Mr. XXX
+    
+
+\section{WORKING PAPERS} 
+\vspace{0.1in}
+	``{\bf Working Paper Title}'', {\sl XXX thesis}, 2015. \\
+		Introduction of your working paper (if necessary).
+
+	``{\bf Working Paper Title}'', {\sl XXX working paper}, 2016. \\
+		Introduction of your working paper (if necessary).
+
+
+\section{WORK IN PROGRESS}
+\vspace{0.1in}
+	``Title of Paper in Progress'', {\sl XXX working paper}.
+	
+	``Title of Paper in Progress'', {\sl XXX working paper}.
+
+
+\section{PRESENTATIONS} 
+\vspace{0.1in}
+	XXX Conference, Apr. 2017
+	
+	XXX Presentations, Apr. 2016
+	
+	
+\section{RESEARCH GRANTS} 
+\vspace{0.1in}
+	XXX Program (Project Code), XXX Institution, 2014
+	
+	XXX Program (Project Code), XXX Institution, 2014
+	
+	
+\section{SELECTED AWARDS \& RESEARCH GRANTS} 
+\vspace{0.1in}
+   XXX Fellowship, XXX Institution, 2016 - 2020
+   
+   XXX Prize, XXX Competition, 2015
+
+
+\section{SKILLS \& QUALIFICATION} 
+\vspace{0.1in}
+   Language: Chinese Mandarin (native), English (fluent)
+
+   Computer skills: \LaTeX, Stata, Matlab, Eviews
+   
+   Qualification: XXXX
+   
+
+\end{resume}
+
+\vspace{0.5in}
+\leftskip=15em Last updated: \today
+
+\end{document}
